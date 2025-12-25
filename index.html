@@ -1,49 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Watch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Hello World 🌍</h1>
+    <h1>Welcome to Anime Watch 🔥</h1>
+    <p>Select an anime to watch</p>
 
-</body>
-</html>
+    <div class="buttons">
+        <button onclick="playAnime('https://www.youtube.com/embed/bT9csxkth8g')">
+            Attack on Titan
+        </button>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+        <button onclick="playAnime('https://www.youtube.com/embed/nxE0Xp0ARcM')">
+            Demon Slayer
+        </button>
+    </div>
 
-<script src="script.js"></script>
-</body>
-</html>
+    <div class="player">
+        <iframe
+            id="videoPlayer"
+            src="https://www.youtube.com/embed/bT9csxkth8g"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <script src="script.js"></script>
 
-<h1>Welcome to Anime Watch 🔥</h1>
-<p>This is my first anime website</p>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
-
-
-<script src="script.js"></script>
 </body>
 </html>
