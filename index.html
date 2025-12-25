@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google verification -->
-    <meta name="google-site-verification" content="ABC123XYZ">
-
     <title>Animax Anime</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome to Anime Watch 🔥</h1>
-    <p>Select an anime to watch</p>
+    <h1>Animax Anime 🔥</h1>
+    <p>Watch official anime trailers</p>
 
-    <div class="buttons">
-        <button onclick="playAnime('https://www.youtube.com/embed/bT9csxkth8g')">
-            Attack on Titan
-        </button>
+    <!-- Anime Cards -->
+    <div class="anime-grid">
 
-        <button onclick="playAnime('https://www.youtube.com/embed/nxE0Xp0ARcM')">
-    Demon Slayer
-</button>
-    </div>I
+        <div class="anime-card"
+             onclick="playAnime('https://www.youtube.com/embed/bT9csxkth8g')">
+            <img src="images/aot.jpg" alt="Attack on Titan">
+            <h3>Attack on Titan</h3>
+        </div>
 
+        <div class="anime-card"
+             onclick="playAnime('https://www.youtube.com/embed/nxE0Xp0ARcM')">
+            <img src="images/ds.jpg" alt="Demon Slayer">
+            <h3>Demon Slayer</h3>
+        </div>
+
+    </div>
+
+    <!-- Video Player -->
     <div class="player">
-
         <iframe
-    id="videoPlayer"
-    src="https://www.youtube.com/embed/bT9csxkth8g"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+            id="videoPlayer"
+            src="https://www.youtube.com/embed/bT9csxkth8g"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
