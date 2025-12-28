@@ -1,3 +1,3 @@
-function playAnime(videoUrl) {
-    document.getElementById("videoPlayer").src = videoUrl;
+function playAnime(url) {
+  document.getElementById("videoPlayer").src = url;
 }
