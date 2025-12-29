@@ -1,39 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Animax Anime</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
+  <div class="container">
 
-  <h1>Animax Anime 🔥</h1>
-  <p>Watch official anime trailers</p>
+    <h1>Animax Anime 🔥</h1>
+    <p>Watch official anime trailers</p>
 
-  <div class="anime-grid">
-    <div class="anime-card" onclick="playAnime('https://www.youtube.com/embed/bT9csxkth8g')">
-      <h3>Attack on Titan</h3>
+    <div class="anime-grid">
+      <div class="anime-card"
+        onclick="playAnime('https://www.youtube.com/embed/bT9csxkth8g')">
+        <h3>Attack on Titan</h3>
+      </div>
+
+      <div class="anime-card"
+        onclick="playAnime('https://www.youtube.com/embed/nxE0Xp0ARcM')">
+        <h3>Demon Slayer</h3>
+      </div>
     </div>
 
-    <div class="anime-card" onclick="playAnime('https://www.youtube.com/embed/nxE0Xp0ARcM')">
-      <h3>Demon Slayer</h3>
+    <div class="player">
+      <iframe
+        id="videoPlayer"
+        src="https://www.youtube.com/embed/bT9csxkth8g"
+        allowfullscreen>
+      </iframe>
     </div>
+
   </div>
 
-  <div class="player">
-    <iframe
-      id="videoPlayer"
-      src="https://www.youtube.com/embed/bT9csxkth8g"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <!-- JS -->
   <script src="script.js"></script>
-
 </body>
-</html>
