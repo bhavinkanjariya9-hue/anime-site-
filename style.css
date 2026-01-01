@@ -25,6 +25,10 @@ body {
   margin-bottom: 10px;
 }
 
+.header h1 {
+  color: #ff6a00;
+}
+
 .header p {
   color: #aaa;
   margin-bottom: 15px;
