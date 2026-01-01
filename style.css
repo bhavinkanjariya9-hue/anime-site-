@@ -2,82 +2,82 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background: #000;
-  color: #fff;
+  background-color: #0f0f0f;
+  color: white;
 }
 
-/* HEADER */
+/* Header */
 .header {
-  background: #0f0f0f;
-  padding: 20px;
-  border-bottom: 2px solid #f47521;
+  text-align: center;
+  padding: 30px 15px;
 }
 
 .header h1 {
-  color: #f47521;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
-.tagline {
-  font-size: 0.9rem;
-  color: #bbb;
+.header p {
+  color: #aaa;
+  margin-bottom: 15px;
 }
 
-/* ANIME GRID */
-.anime-section {
-  display: flex;
+#search {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Anime Grid */
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
-  padding: 25px;
-  flex-wrap: wrap;
+  padding: 20px;
 }
 
-/* CARD */
 .anime-card {
-  width: 160px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anime-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3);
 }
 
 .anime-card img {
   width: 100%;
-  border-radius: 10px;
+  height: 230px;
+  object-fit: cover;
 }
 
 .anime-card h3 {
-  margin-top: 8px;
-  font-size: 0.95rem;
+  text-align: center;
+  padding: 10px;
 }
 
-.anime-card:hover {
-  transform: scale(1.08);
-}
-
-/* PLAYER */
+/* Video Player */
 .player {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
-iframe {
+.player iframe {
   width: 100%;
-  max-width: 720px;
-  height: 405px;
-  border-radius: 14px;
-  border: none;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .anime-section {
-    justify-content: center;
-  }
-
-  iframe {
-    height: 230px;
-  }
+  max-width: 700px;
+  height: 390px;
+  border-radius: 10px;
 }
