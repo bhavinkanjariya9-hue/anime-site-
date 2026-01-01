@@ -1,4 +1,3 @@
 function playAnime(videoUrl) {
-  const player = document.getElementById("videoPlayer");
-  player.src = videoUrl;
+  document.getElementById("videoPlayer").src = videoUrl;
 }
