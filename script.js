@@ -12,3 +12,5 @@ function searchAnime() {
     card.style.display = title.includes(input) ? "block" : "none";
   }
 }
+
+playAnime('https://www.youtube.com/embed/ZhvUomsfG8o')
